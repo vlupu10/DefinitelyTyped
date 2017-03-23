@@ -4,7 +4,6 @@
 
 /// <reference types="node" />
 
-
 import * as es6styleimport from 'nedb-logger';
 
 import nedblogger = require('nedb-logger');
@@ -14,7 +13,7 @@ import nedblogger = require('nedb-logger');
 import Datastore = require('nedb-logger');
 var db = new Datastore({ filename: 'path/to/datafile' });
 
-var doc: any = {
+const doc: any = {
     hello: 'world'
     , n: 5
     , today: new Date()
