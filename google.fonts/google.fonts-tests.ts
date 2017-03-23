@@ -1,5 +1,4 @@
 function test(list: google.fonts.WebfontList) {
-
     var f = list.items[0];
 
     var info = [

@@ -66,7 +66,6 @@ describe("tester Google Analytics Tracker _gat object", () => {
     it("can create _anonymizeIp", () => {
         _gat._anonymizeIp();
     });
-
 });
 
 describe("tester Google Analytics Code  _gaq object", () => {
@@ -82,7 +81,6 @@ describe("tester Google Analytics Code  _gaq object", () => {
         );
     });
 });
-
 
 describe("tester Google Analytics Code  Tracker object", () => {
     it("can create Tracker object and call methods", () => {

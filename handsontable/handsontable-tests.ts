@@ -1,5 +1,3 @@
-
-
 function test_HandsontableInit() {
   var elem = document.createElement('div');
   var hot = new Handsontable(elem, {

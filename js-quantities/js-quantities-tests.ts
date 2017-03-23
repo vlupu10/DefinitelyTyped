@@ -668,7 +668,6 @@ describe("js-quantities", () => {
       expect(qty.gte("3 mm")).toBe(true);
       expect(qty.gt("5 m")).toBe(false);
     });
-
   });
 
   describe("non-ASCII character", () => {
@@ -692,7 +691,6 @@ describe("js-quantities", () => {
   });
 
   describe("math", () => {
-
     it("should add quantities", () => {
       var qty1 = Qty("2.5m");
       var qty2 = Qty("3m");
@@ -905,11 +903,9 @@ describe("js-quantities", () => {
       expect(result.scalar).toBe(0.01);
       expect(result.units()).toBe("1/S2");
     });
-
   });
 
   describe("math with temperatures", () => {
-
     it("should add temperature degrees", () => {
       var qty = Qty("2degC");
       expect(qty.add("3degF").scalar).toBeCloseTo(11 / 3, 10);
@@ -1098,7 +1094,6 @@ describe("js-quantities", () => {
       expect(result.scalar).toBe(2);
       expect(result.units()).toBe("tempF");
     });
-
   });
 
   describe("errors", () => {
@@ -1112,7 +1107,6 @@ describe("js-quantities", () => {
   });
 
   describe("utility methods", () => {
-
     it("should accept string as parameter for compatibility tests", () => {
       var qty = Qty("1 mm");
 
@@ -1152,7 +1146,6 @@ describe("js-quantities", () => {
       qty = Qty("1 cm^2*J^3/s^2*A^2");
       expect(qty.units()).toBe("cm2*J3/s2*A2");
     });
-
   });
 
   describe("toString", () => {
@@ -1215,7 +1208,6 @@ describe("js-quantities", () => {
       var qty = Qty("123 cm3");
       expect(qty.toString()).toBe(qty.toString("cm3"));
     });
-
   });
 
   describe("format", () => {

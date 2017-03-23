@@ -1,5 +1,3 @@
-
-
 // ----------------------------------------------------------
 // JL
 
@@ -61,7 +59,6 @@ consoleAppender1.setOptions({
 		batchSize: 2
 });
 
-
 // ----------------------------------------------------------
 // Loggers
 
@@ -85,4 +82,3 @@ logger1.setOptions({
 		appenders: [ ajaxAppender1, consoleAppender1 ],
 		onceOnly: [ 'regex1', 'regex2' ]
 });
-

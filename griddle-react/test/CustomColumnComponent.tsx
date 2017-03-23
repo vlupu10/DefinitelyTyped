@@ -8,20 +8,20 @@ import * as React from 'react';
 import Griddle, { CustomColumnComponentProps } from 'griddle-react';
 
 interface MyCustomResult {
-  name: string,
-  test: string
+  name: string;
+  test: string;
 }
 
 class LinkComponent extends React.Component<CustomColumnComponentProps<MyCustomResult>, any> {
   render() {
     var url = "speakers/" + this.props.rowData.test + "/" + this.props.data;
-    return <a href={url}>{this.props.data}</a>
+    return <a href={url}>{this.props.data}</a>;
   }
 }
 
 const StatelessFunctionComponent = (props: CustomColumnComponentProps<MyCustomResult>) => {
   var url = "speakers/" + props.rowData.test + "/" + props.data;
-  return <a href={url}>{props.data}</a>
+  return <a href={url}>{props.data}</a>;
 };
 
 var columnMeta = [
@@ -54,7 +54,7 @@ class CustomColumnComponentGrid extends React.Component<any, any> {
   render() {
     type TypedGriddle = new () => Griddle<MyCustomResult>;
     const TypedGriddle = Griddle as TypedGriddle;
-    
+
     return (
       <TypedGriddle
         results={results}

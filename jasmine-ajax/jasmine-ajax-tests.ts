@@ -5,7 +5,6 @@
 
 /// <reference types="jasmine" />
 
-
 declare function getJasmineRequireObj();
 
 describe('StubTracker', () => {
@@ -751,7 +750,6 @@ describe('FakeRequest', () => {
 	});
 });
 
-
 describe("Jasmine Mock Ajax (for toplevel)", () => {
 	var request, anotherRequest, response;
 	var success, error, complete;
@@ -832,7 +830,6 @@ describe("Jasmine Mock Ajax (for toplevel)", () => {
 		});
 
 		describe("mockAjax.requests.mostRecent()", () => {
-
 			describe("when there is one request queued", () => {
 				it("should return the request", () => {
 					expect(mockAjax.requests.mostRecent()).toEqual(request);
@@ -1200,7 +1197,6 @@ describe("Jasmine Mock Ajax (for toplevel)", () => {
 		});
 	});
 });
-
 
 function sharedAjaxResponseBehaviorForZepto_Success(context) {
 	describe("the success response", () => {
