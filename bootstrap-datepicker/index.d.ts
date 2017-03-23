@@ -68,3 +68,4 @@ interface JQuery {
     on(events: "changeDate", selector: string, handler: (eventObject: DatepickerEventObject) => any): JQuery;
     on(events: 'changeDate', handler: (eventObject: DatepickerEventObject) => any): JQuery;
 }
+declare module "bootstrap-datepicker" {}
