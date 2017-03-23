@@ -14,14 +14,14 @@ import Datastore = require('nedb-logger');
 var db = new Datastore({ filename: 'path/to/datafile' });
 
 const doc: any = {
-    hello: 'world'
-    , n: 5
-    , today: new Date()
-    , nedbIsAwesome: true
-    , notthere: null
-    , notToBeSaved: undefined  // Will not be saved
-    , fruits: ['apple', 'orange', 'pear']
-    , infos: { name: 'nedb' }
+    hello: 'world',
+    n: 5,
+    today: new Date(),
+    nedbIsAwesome: true,
+    notthere: null,
+    notToBeSaved: undefined,  // Will not be saved
+    fruits: ['apple', 'orange', 'pear'],
+    infos: { name: 'nedb' },
 };
 
 db.insert(doc, (err: Error, newDoc: any) => {   // Callback is optional
